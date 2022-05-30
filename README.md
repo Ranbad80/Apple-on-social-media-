@@ -68,6 +68,9 @@ create a Cosmos DB database. This database will house containers, which house it
 ![capstone3](https://user-images.githubusercontent.com/83798130/171027144-3f3d5d10-5b15-479c-86f4-b6db1cc2ab02.jpg)
 
 ## Create a Container and Upsert the data to Cosmos DB
+```
+Containers, also referred to as collections, house the items (documents) that make up the records of the database. The partition key path (‘thread/country’) is an attribute of the container that Cosmos DB will use to group and partition the dataset behind the scenes.
+```
 ![capstone4](https://user-images.githubusercontent.com/83798130/171027527-c692ed83-7dec-4eef-b53e-3491913b8968.jpg)
 
 
