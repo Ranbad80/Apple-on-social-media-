@@ -39,6 +39,36 @@ az cosmosdb create --name applecap \
 ```
 ![capstone2](https://user-images.githubusercontent.com/83798130/171026430-37d27a20-c4a8-4463-a410-1dfc4b8f07f5.jpg)
 
+## Import packages and initialize the Cosmos client
+```
+import pandas as pd 
+import json
+import azure.cosmos.cosmos_client as cosmos_client
+import azure.cosmos.errors as errors
+import azure.cosmos.documents as documents
+import azure.cosmos.http_constants as http_constants
+
+print('Imported packages successfully.')
+
+# Initialize the Cosmos client
+
+config = {
+    "endpoint": "my ENDPOINT HERE",
+    "primarykey": "my PRIMARY KEY HERE"
+}
+
+# Create the cosmos client
+client = cosmos_client.CosmosClient(url_connection=config["endpoint"], auth={"masterKey":config["primarykey"]}
+)
+```
+## Create a Database
+```
+create a Cosmos DB database. This database will house containers, which house items. Items are the individual documents or records/rows that comprise the database.
+```
+![capstone3](https://user-images.githubusercontent.com/83798130/171027144-3f3d5d10-5b15-479c-86f4-b6db1cc2ab02.jpg)
+
+## Create a Container and Upsert the data to Cosmos DB
+![capstone4](https://user-images.githubusercontent.com/83798130/171027527-c692ed83-7dec-4eef-b53e-3491913b8968.jpg)
 
 
 
