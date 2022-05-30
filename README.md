@@ -28,7 +28,17 @@ Next, create a Resource Group named Cosmos-DB-Account with the az group create c
 az group create --location westus \
                 --name Cosmos-DB-Account \
                 --subscription Azureforstudent
+```
+![capstone1](https://user-images.githubusercontent.com/83798130/171026012-e1bc3edb-2776-4e44-a493-e4cef1ba2058.jpg)
+```
+Create a Cosmos DB named hdicosmosdb (must be all lowercase) with az cosmosdb create command. This will take about 10 minutes to complete.
+az cosmosdb create --name applecap \
+                   --resource-group Cosmos-DB-Account \
+                   --locations regionName=westus \
+                   --subscription Azureforstudent
+```
+![capstone2](https://user-images.githubusercontent.com/83798130/171026430-37d27a20-c4a8-4463-a410-1dfc4b8f07f5.jpg)
 
-![capstone1](https://user-images.githubusercontent.com/83798130/171025830-626c376e-60b7-42fa-b6c2-598e7586b850.jpg)
+
 
 
