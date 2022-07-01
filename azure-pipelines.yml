@@ -24,17 +24,6 @@ variables:
 
   # Python version: 3.7
   pythonVersion: '3.7'
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Azureforstudent (33c4aa8e-9114-4f9c-9e56-507595d842cc)'
-    appType: 'webAppLinux'
-    WebAppName: 'msdocspythoncapston'
-    deployToSlotOrASE: true
-    ResourceGroupName: 'msdocs-python-webapp-quickstart'
-    SlotName: 'production'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    RuntimeStack: 'PYTHON|3.7'
 stages:
 - stage: Build
   displayName: Build stage
