@@ -53,6 +53,9 @@ enter your GitHub password again as a confirmation, and then GitHub prompts you 
 then approve and install after some changing in the YAML pipeline
 then save and run
 ```
+![firstinpipeline](https://user-images.githubusercontent.com/83798130/176982100-6c066f96-289d-4f12-b3bd-f0734d761423.jpg)
+![secondinpipline](https://user-images.githubusercontent.com/83798130/176982110-4bd3e615-00c5-45c9-a100-1498b9ea23d4.jpg)
+
 ![forthpipline](https://user-images.githubusercontent.com/83798130/176982050-bc43f9d0-47d7-4566-8799-841c62590139.jpg)
 
 
