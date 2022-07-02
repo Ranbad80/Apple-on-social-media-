@@ -24,3 +24,10 @@ you can check your code in code+test
 ![thirdfuncti](https://user-images.githubusercontent.com/83798130/176981430-2194dd42-60c0-4c4e-8a1f-2b7273cf1c28.jpg)
 
 
+## using  Azure DevOps project
+```
+To deploy to Azure App Service from Azure Pipelines, you need to establish a service connection between the two services.
+In a browser, go to dev.azure.com. If you don't yet have an account on Azure DevOps, select Start free and get a free account.
+```
+![pipeline](https://user-images.githubusercontent.com/83798130/176981551-702e0cb5-975d-47f5-ad37-ce06a70b96ca.jpg)
+
