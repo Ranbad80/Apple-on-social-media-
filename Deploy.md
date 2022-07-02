@@ -46,5 +46,15 @@ Then we Create a Python-specific pipeline to deploy to App Service
 ```
 ![create-first-pipeline](https://user-images.githubusercontent.com/83798130/176981893-f3df7784-2796-40e5-a2b7-c27365845846.png)
 
+![where-is-your-code](https://user-images.githubusercontent.com/83798130/176981903-4289e478-696e-46bc-8036-fa0ef84998c2.png)
+```
+then I authorized Azure to enter my github where is my code 
+enter your GitHub password again as a confirmation, and then GitHub prompts you to install the Azure Pipelines extension
+then approve and install after some changing in the YAML pipeline
+then save and run
+```
+![forthpipline](https://user-images.githubusercontent.com/83798130/176982050-bc43f9d0-47d7-4566-8799-841c62590139.jpg)
+
+
 
 
