@@ -22,6 +22,50 @@ you can check your code in code+test
 ```
 
 ![thirdfuncti](https://user-images.githubusercontent.com/83798130/176981430-2194dd42-60c0-4c4e-8a1f-2b7273cf1c28.jpg)
+## using Function App with the Azure CLI
+```
+Step 1 - Create a Resource Group
+$resourceGroup = "AzureFunctionsDemo"
+$location = "westeurope"
+az group create -n $resourceGroup -l $location
+
+Step 2 - Create a Storage Account
+$rand = Get-Random -Minimum 10000 -Maximum 99999
+$storageAccountName = "funcsdemo$rand"
+
+az storage account create `
+  -n $storageAccountName `
+  -l $location `
+  -g $resourceGroup `
+  --sku Standard_LRS
+  
+  Step 4 - Create a Function App
+  $functionAppName = "funcs-demo-$rand"
+
+az functionapp create `
+  -n $functionAppName `
+  --storage-account $storageAccountName `
+  --consumption-plan-location $location `
+  --app-insights $appInsightsName `
+  --runtime dotnet `
+  -g $resourceGroup
+  
+  Step 5 - Deploy our Function App Code
+  # publish the code
+dotnet publish -c Release
+$publishFolder = "FunctionsDemo/bin/Release/netcoreapp2.1/publish"
+
+# create the zip
+$publishZip = "publish.zip"
+if(Test-path $publishZip) {Remove-item $publishZip}
+Add-Type -assembly "system.io.compression.filesystem"
+[io.compression.zipfile]::CreateFromDirectory($publishFolder, $publishZip)
+
+# deploy the zipped package
+az functionapp deployment source config-zip `
+ -g $resourceGroup -n $functionAppName --src $publishZip
+
+```
 
 
 ## using  Azure DevOps project
