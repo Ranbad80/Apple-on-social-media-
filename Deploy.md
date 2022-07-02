@@ -41,5 +41,10 @@ then we make a  New service connection Add an Azure Resource Manager service con
 Give the connection a name:
 ```
 ![nowpipline](https://user-images.githubusercontent.com/83798130/176981833-b6fb9e79-b663-4745-9a15-85be9cbf8a15.jpg)
+```
+Then we Create a Python-specific pipeline to deploy to App Service
+```
+![create-first-pipeline](https://user-images.githubusercontent.com/83798130/176981893-f3df7784-2796-40e5-a2b7-c27365845846.png)
+
 
 
