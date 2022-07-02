@@ -30,4 +30,9 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a ser
 In a browser, go to dev.azure.com. If you don't yet have an account on Azure DevOps, select Start free and get a free account.
 ```
 ![pipeline](https://user-images.githubusercontent.com/83798130/176981551-702e0cb5-975d-47f5-ad37-ce06a70b96ca.jpg)
-
+```
+The browser displays my Azure DevOps dashboard, at the URL https://dev.azure.com/raniabadr80
+Azure DevOps creates a new organization using the email alias you used to sign in.
+A project is a grouping for boards, repositories, pipelines, and other aspects of Azure DevOps.
+```
+![thirdinpiplne](https://user-images.githubusercontent.com/83798130/176981704-5a5c26ab-302d-4809-8060-3ad6e0c874dd.jpg)
