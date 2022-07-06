@@ -25,8 +25,8 @@ you can check your code in code+test
 ## using Function App with the Azure CLI
 ```
 Step 1 - Create a Resource Group
-$resourceGroup = "AzureFunctionsDemo"
-$location = "westeurope"
+$resourceGroup = "forfunctionaple"
+$location = "westus"
 az group create -n $resourceGroup -l $location
 
 Step 2 - Create a Storage Account
@@ -36,23 +36,23 @@ $storageAccountName = "funcsdemo$rand"
 az storage account create `
   -n $storageAccountName `
   -l $location `
-  -g $resourceGroup `
+  -g $forfunctionaple `
   --sku Standard_LRS
   
   Step 4 - Create a Function App
   $functionAppName = "funcs-demo-$rand"
 
 az functionapp create `
-  -n $functionAppName `
+  -n $applecapstonefunc `
   --storage-account $storageAccountName `
   --consumption-plan-location $location `
   --app-insights $appInsightsName `
-  --runtime dotnet `
-  -g $resourceGroup
+  --runtime ASP-forfunctionaple-a67f (Y1: 0) `
+  -g $forfunctionaple
   
   Step 5 - Deploy our Function App Code
   # publish the code
-dotnet publish -c Release
+ publish -c Release
 $publishFolder = "FunctionsDemo/bin/Release/netcoreapp2.1/publish"
 
 # create the zip
@@ -63,7 +63,7 @@ Add-Type -assembly "system.io.compression.filesystem"
 
 # deploy the zipped package
 az functionapp deployment source config-zip `
- -g $resourceGroup -n $functionAppName --src $publishZip
+ -g $forfunctionaple -n $applecapstonefunc --src $publishZip
 
 ```
 
